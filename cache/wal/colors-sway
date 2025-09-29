@@ -1,0 +1,21 @@
+set $wallpaper /home/arvid/wallpapers/cyberpunk.jpg
+
+set $background #0B0B14
+set $foreground #9dc6e6
+
+set $color0 #0B0B14
+set $color1 #2D4674
+set $color2 #54415C
+set $color3 #BC4A75
+set $color4 #2E5B97
+set $color5 #4D5E9D
+set $color6 #406BC5
+set $color7 #9dc6e6
+set $color8 #6d8aa1
+set $color9 #2D4674
+set $color10 #54415C
+set $color11 #BC4A75
+set $color12 #2E5B97
+set $color13 #4D5E9D
+set $color14 #406BC5
+set $color15 #9dc6e6

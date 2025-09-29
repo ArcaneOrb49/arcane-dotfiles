@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/arvid/wallpapers/cyberpunk.jpg"
+let background = "#0B0B14"
+let foreground = "#9dc6e6"
+let cursor     = "#9dc6e6"
+
+" Colors
+let color0  = "#0B0B14"
+let color1  = "#2D4674"
+let color2  = "#54415C"
+let color3  = "#BC4A75"
+let color4  = "#2E5B97"
+let color5  = "#4D5E9D"
+let color6  = "#406BC5"
+let color7  = "#9dc6e6"
+let color8  = "#6d8aa1"
+let color9  = "#2D4674"
+let color10 = "#54415C"
+let color11 = "#BC4A75"
+let color12 = "#2E5B97"
+let color13 = "#4D5E9D"
+let color14 = "#406BC5"
+let color15 = "#9dc6e6"
