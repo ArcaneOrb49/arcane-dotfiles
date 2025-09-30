@@ -310,7 +310,7 @@ environment.variables = {
 	neofetch
 	grim
 	slurp
-	waybar
+#	waybar
 	wofi
 	networkmanagerapplet
 	greetd.gtkgreet
@@ -321,10 +321,15 @@ environment.variables = {
 	python313Packages.dbus-python
 	openvpn
 	polkit
-	pywal
-	hyprpaper
+#	pywal
 	dejavu_fonts
 	nerd-fonts._0xproto
+	# Hyprland ecosystem
+	hyprpaper
+	hyprcursor
+	# Other Window Manager Utilities
+	waybar
+	pywal
   ];
 
 
