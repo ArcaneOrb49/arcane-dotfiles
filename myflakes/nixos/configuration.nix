@@ -330,6 +330,8 @@ environment.variables = {
 	# Other Window Manager Utilities
 	waybar
 	pywal
+	# Useful Apps
+	libreoffice
   ];
 
 
