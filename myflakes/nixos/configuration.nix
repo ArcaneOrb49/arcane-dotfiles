@@ -332,6 +332,10 @@ environment.variables = {
 	pywal
 	# Useful Apps
 	libreoffice
+	# Uni Stuff
+	# Security / Pentesting
+	# Funny Stuff
+	cmatrix
   ];
 
 
