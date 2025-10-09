@@ -2,7 +2,7 @@
         "layer": "top",
         "position": "top",
         "reload_style_on_change": true,
-        "modules-left": ["clock"],
+        "modules-left": ["custom/notification","clock","custom/pacman","tray"],
         "modules-center": ["hyprland/workspaces"],
         "modules-right": ["cpu", "memory", "temperature","bluetooth","network","battery"],
 
@@ -17,7 +17,12 @@
             "persistent-workspaces": {
                 "*": [ 1,2,3,4,5 ]
             }
-    
+        },
+        "custom/notification": {
+            "tooltip": false,
+            "format": "",
+            "on-click": "swaync-client -t -sw",
+            "escape": true
         },
         "clock": {
             "format": "{:%I:%M:%S %p} ",
@@ -34,18 +39,18 @@
             }
         },
         "network": {
-            "format-wifi": "  |",
-            "format-ethernet":"  |",
-            "format-disconnected": " |",
-   //         "tooltip-format-disconnected": "Error",
+            "format-wifi": "",
+            "format-ethernet":"",
+            "format-disconnected": "",
+            "tooltip-format-disconnected": "Error",
             "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
             "tooltip-format-ethernet": "{ifname} 🖧 ",
 //            "on-click": "kitty nmcli device wifi list"
         },
         "bluetooth": {
-            "format-on": "󰂯 |",
+            "format-on": "󰂯",
             "format-off": "BT-off",
-            "format-disabled": "󰂲 |",
+            "format-disabled": "󰂲",
             "format-connected-battery": "{device_battery_percentage}% 󰂯",
             "format-alt": "{device_alias} 󰂯",
             "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
@@ -57,7 +62,7 @@
         "battery": {
             "interval":30,
             "states": {
-  	        "good": 95,
+                "good": 95,
                 "warning": 30,
                 "critical": 20
             },
@@ -75,8 +80,6 @@
             ""
             ]
         },
-
-
         "custom/expand": {
             "format": "",
             "tooltip": false
@@ -86,15 +89,15 @@
             "tooltip": false
         },
         "cpu": {
-            "format": "󰻠 {usage}% |",
+            "format": "󰻠 {usage}%",
             "tooltip": true
         },
         "memory": {
-            "format": "  {usage}% |"
+            "format": ""
         },
         "temperature": {
             "critical-threshold": 80,
-            "format": " {temperatureC}°C |"
+            "format": " {temperatureC}°C"
         },
         "tray": {
             "icon-size": 14,
