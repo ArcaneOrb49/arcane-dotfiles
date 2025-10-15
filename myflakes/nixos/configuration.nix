@@ -310,18 +310,14 @@ environment.variables = {
 	neofetch
 	grim
 	slurp
-#	waybar
 	wofi
 	networkmanagerapplet
 	greetd.gtkgreet
 	sway
 	unzip
 	bluez
-	python313
-	python313Packages.dbus-python
 	openvpn
 	polkit
-#	pywal
 	dejavu_fonts
 	nerd-fonts._0xproto
 	# Hyprland ecosystem
@@ -332,10 +328,26 @@ environment.variables = {
 	pywal
 	# Useful Apps
 	libreoffice
+	vlc
 	# Uni Stuff
+	conda
+	#jupyter-all
+	#python313Packages.tensorflow
+	#python313
+	#python313Packages.dbus-python
+	#python313Packages.pandas
+	(python313.withPackages (ps: with ps; [
+		pandas
+		tensorflow
+		dbus-python
+		ipykernel
+		jupyterlab
+	]))
 	# Security / Pentesting
 	# Funny Stuff
 	cmatrix
+	# Linux Utilities
+	wirelesstools
   ];
 
 

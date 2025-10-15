@@ -90,10 +90,9 @@
             "tooltip": true
         },
         "memory": {
-            "format": "  {usage}% |"
+            "format": "  {percentage}% |"
         },
         "temperature": {
-            "critical-threshold": 80,
             "format": " {temperatureC}°C |"
         },
         "tray": {
