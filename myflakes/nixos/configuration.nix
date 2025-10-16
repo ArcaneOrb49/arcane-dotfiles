@@ -323,6 +323,7 @@ environment.variables = {
 	# Hyprland ecosystem
 	hyprpaper
 	hyprcursor
+	rose-pine-hyprcursor
 	# Other Window Manager Utilities
 	waybar
 	pywal

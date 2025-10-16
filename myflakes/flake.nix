@@ -4,6 +4,11 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     hyprland.url = "github:hyprwm/Hyprland";
+    rose-pine-hyprcursor = {
+	url = "github:ndom91/rose-pine-hyprcursor";
+	inputs.nixpkgs.follows = "nixpkgs";
+	inputs.hyprlang.follows = "hyprland/hyprlang";
+	};
   };
 
   outputs = { self, nixpkgs, hyprland, ... }:
