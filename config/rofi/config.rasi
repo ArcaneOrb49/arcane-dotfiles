@@ -30,6 +30,7 @@ element.selected.normal {
 
 listview {
 	scrollbar: false;
+	lines: 10;
 }
 
 button.selected {
@@ -39,4 +40,8 @@ button.selected {
 configuration {
 	show-icons: true;
 	display-drun: "  ";
+}
+
+element {
+	padding: 4px;
 }
