@@ -1,0 +1,42 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+window {
+	width: 600px;
+	location: center;
+	ancor: center;
+	spacing: 0;
+	children: [mainbox];
+	orientation: horizontal;
+	padding: 1.5ch;
+	border-radius: 25px;
+}
+
+mainbox {
+	children: [ inputbar, message, listview ];
+}
+
+inputbar {
+	border: 0px 0px 2px 0px;
+}
+
+entry {
+	placeholder: "Type here...";
+}
+
+element.selected.normal {
+	border-radius: 25px; /*Soft Corners */
+	padding: 10px;
+}
+
+listview {
+	scrollbar: false;
+}
+
+button.selected {
+	expand: true;
+}
+
+configuration {
+	show-icons: true;
+	display-drun: "  ";
+}

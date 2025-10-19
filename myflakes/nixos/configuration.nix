@@ -327,6 +327,7 @@ environment.variables = {
 	# Other Window Manager Utilities
 	waybar
 	pywal
+	rofi
 	# Useful Apps
 	libreoffice
 	vlc
