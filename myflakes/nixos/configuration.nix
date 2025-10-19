@@ -333,11 +333,6 @@ environment.variables = {
 	vlc
 	# Uni Stuff
 	conda
-	#jupyter-all
-	#python313Packages.tensorflow
-	#python313
-	#python313Packages.dbus-python
-	#python313Packages.pandas
 	(python313.withPackages (ps: with ps; [
 		pandas
 		tensorflow
@@ -350,6 +345,8 @@ environment.variables = {
 	cmatrix
 	# Linux Utilities
 	wirelesstools
+	xfce.thunar
+	fastfetch
   ];
 
 
