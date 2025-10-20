@@ -320,6 +320,7 @@ environment.variables = {
 	polkit
 	dejavu_fonts
 	nerd-fonts._0xproto
+	spotify
 	# Hyprland ecosystem
 	hyprpaper
 	hyprcursor
@@ -338,7 +339,7 @@ environment.variables = {
 		tensorflow
 		dbus-python
 		ipykernel
-		jupyterlab
+		jupyter
 	]))
 	# Security / Pentesting
 	# Funny Stuff
