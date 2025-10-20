@@ -321,6 +321,7 @@ environment.variables = {
 	dejavu_fonts
 	nerd-fonts._0xproto
 	spotify
+	vivaldi
 	# Hyprland ecosystem
 	hyprpaper
 	hyprcursor
