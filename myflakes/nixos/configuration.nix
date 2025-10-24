@@ -11,7 +11,7 @@
 	  # Include the package config
 	  ./applications.nix
 	  # Include the font config
-	  ./fonts.nix
+	  #./fonts.nix
     ];
 
 
