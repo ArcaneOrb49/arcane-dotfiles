@@ -34,11 +34,11 @@
             }
         },
         "network": {
-            "format-wifi": "   ",
+            "format-wifi": "{essid}   ",
             "format-ethernet":"    ",
             "format-disconnected": "  ",
    //         "tooltip-format-disconnected": "Error",
-            "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+            "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
             "tooltip-format-ethernet": "{ifname} 🖧 ",
 //            "on-click": "kitty nmcli device wifi list"
         },
@@ -61,7 +61,7 @@
                 "warning": 30,
                 "critical": 20
             },
-            "format": "{capacity}% {icon}",
+            "format": "{capacity}% 󰁹 ",
             "format-charging": "{capacity}% 󰂄",
             "format-plugged": "{capacity}% 󰂄 ",
             "format-alt": "{time} {icon}",

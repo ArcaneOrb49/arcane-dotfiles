@@ -68,9 +68,11 @@
 
   # Enable networking
    networking.networkmanager.enable = true;
+   networking.wireless.iwd.enable = true;
 
-
-
+   networking.networkmanager.plugins = with pkgs; [
+	networkmanager-openvpn
+];
 
 
 
@@ -133,9 +135,6 @@
 
 
 	fonts.fontconfig.enable = true;
-
-
-
 
 
 
@@ -330,6 +329,8 @@ environment.variables = {
 	waybar
 	pywal
 	rofi
+	rofi-network-manager
+	rofi-vpn
 	# Useful Apps
 	libreoffice
 	vlc
@@ -342,6 +343,7 @@ environment.variables = {
 		ipykernel
 		jupyter
 	]))
+	podman
 	# Security / Pentesting
 	# Funny Stuff
 	cmatrix
@@ -349,6 +351,11 @@ environment.variables = {
 	wirelesstools
 	xfce.thunar
 	fastfetch
+	networkmanager-openvpn
+	networkmanager
+	networkmanager_dmenu
+	neovim
+	wireshark
   ];
 
 
@@ -356,7 +363,7 @@ environment.variables = {
 
 
 
-
+	virtualisation.podman.enable = true;
 
 
 	#####################################
