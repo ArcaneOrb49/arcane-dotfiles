@@ -8,6 +8,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+	  # Include the package config
+	  ./applications.nix
+	  # Include the font config
+	  ./fonts.nix
     ];
 
 
@@ -286,77 +290,9 @@ environment.variables = {
 	
 
 
+
+	
  
-  #####################################
-  ##         System Programms        ##
-  #####################################
-
-	fonts.packages = with pkgs; [
- 	nerd-fonts.fira-code
-	nerd-fonts.droid-sans-mono
-	nerd-fonts._0xproto
-	];
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-	wget
-	discord
-	brave
-	git
-	kitty
-	neofetch
-	grim
-	slurp
-	wofi
-	networkmanagerapplet
-	greetd.gtkgreet
-	sway
-	unzip
-	bluez
-	openvpn
-	polkit
-	dejavu_fonts
-	nerd-fonts._0xproto
-	spotify
-	vivaldi
-	# Hyprland ecosystem
-	hyprpaper
-	hyprcursor
-	rose-pine-hyprcursor
-	# Other Window Manager Utilities
-	waybar
-	pywal
-	rofi
-	rofi-network-manager
-	rofi-vpn
-	# Useful Apps
-	libreoffice
-	vlc
-	# Uni Stuff
-	conda
-	(python313.withPackages (ps: with ps; [
-		pandas
-		tensorflow
-		dbus-python
-		ipykernel
-		jupyter
-	]))
-	podman
-	# Security / Pentesting
-	# Funny Stuff
-	cmatrix
-	# Linux Utilities
-	wirelesstools
-	xfce.thunar
-	fastfetch
-	networkmanager-openvpn
-	networkmanager
-	networkmanager_dmenu
-	neovim
-	wireshark
-  ];
 
 
 
