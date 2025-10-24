@@ -47,6 +47,7 @@ environment.systemPackages = with pkgs; [
 
  ### Funny Programms
     cmatrix
+    clock-rs
 
  ### Productivity Apps
     libreoffice
