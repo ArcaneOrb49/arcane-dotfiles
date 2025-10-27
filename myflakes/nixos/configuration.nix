@@ -8,10 +8,16 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+
 	  # Include the package config
 	  ./applications.nix
+
 	  # Include the font config
 	  ./fonts.nix
+	
+	# Include some automated procedures
+	./procedures.nix
+
     ];
 
 

@@ -21,6 +21,8 @@ environment.systemPackages = with pkgs; [
     unzip
     rofi
     xfce.thunar
+    xournalpp
+    razer-cli
 
 
  ### Systemwide Dependencies
