@@ -74,5 +74,10 @@ environment.systemPackages = with pkgs; [
     spotify
     brave
     vivaldi
+
+ ### Dependencies
+ 	python313Packages.openrazer
+	xorg.xrdb
+
 ];
 }
