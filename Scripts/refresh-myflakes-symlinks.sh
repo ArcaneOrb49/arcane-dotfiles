@@ -8,7 +8,7 @@ git commit -m "COMMIT FOR SYMLINK-REFRESH"
 
 echo "Deleting stale symlinks..."
 cd /home/arvid/
-rm myflake
+rm myflakes
 
 echo "Re-adding fresh symlinks..."
 ln -s ~/arcanes-dotfiles/myflakes ~/myflakes
