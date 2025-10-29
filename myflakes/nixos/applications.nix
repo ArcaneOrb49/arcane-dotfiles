@@ -23,6 +23,8 @@ environment.systemPackages = with pkgs; [
     xfce.thunar
     xournalpp
     razer-cli
+    kdePackages.okular
+    traceroute
 
 
  ### Systemwide Dependencies
