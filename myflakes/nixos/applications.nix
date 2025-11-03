@@ -48,6 +48,9 @@ environment.systemPackages = with pkgs; [
 
  ### Security / Pentesting
     wireshark
+    nmap
+    ghidra
+    metasploit
 
  ### Funny Programms
     cmatrix
