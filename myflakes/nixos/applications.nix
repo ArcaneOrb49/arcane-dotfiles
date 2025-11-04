@@ -25,6 +25,7 @@ environment.systemPackages = with pkgs; [
     razer-cli
     kdePackages.okular
     traceroute
+    starship
 
 
  ### Systemwide Dependencies
@@ -51,6 +52,7 @@ environment.systemPackages = with pkgs; [
     nmap
     ghidra
     metasploit
+    dnslookup
 
  ### Funny Programms
     cmatrix

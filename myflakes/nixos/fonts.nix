@@ -4,5 +4,6 @@
  	nerd-fonts.fira-code
 	nerd-fonts.droid-sans-mono
 	nerd-fonts._0xproto
+	nerd-fonts.jetbrains-mono
 	];
 }
