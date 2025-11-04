@@ -57,6 +57,15 @@ environment.systemPackages = with pkgs; [
  ### Funny Programms
     cmatrix
     clock-rs
+    cbonsai
+    asciiquarium-transparent
+    htop
+    zenith
+    pipes
+    gotop
+    broot
+    speedtest-cli
+    glances
 
  ### Productivity Apps
     libreoffice

@@ -20,15 +20,41 @@ $nodejs\
 $nim\
 $rust\
 $scala\
+$python\
 [](fg:#86BBD8 bg:#06969A)\
 $docker_context\
 [](fg:#06969A bg:#33658A)\
 $time\
 [ ](fg:#33658A)\
+$hostname\
+$jobs\
+$nix_shell\
 """
 
 # Disable the blank line at the start of the prompt
-# add_newline = false
+ add_newline = true
+
+# ~/.config/starship.toml
+
+[hostname]
+format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+trim_at = ''
+disabled = false
+
+[jobs]
+symbol = '+ '
+number_threshold = 4
+symbol_threshold = 0
+
+
+[nix_shell]
+disabled = false
+symbol = '❄️ '
+pure_msg = 'pure'
+impure_msg = 'impure'
+unknown_msg = 'unknown'
+format = '[$symbol]'
+style = "bold blue"
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
@@ -43,13 +69,14 @@ disabled = false
 # represents the current operating system
 [os]
 style = "bg:#9A348E"
-disabled = false # Disabled by default
+disabled = true # Disabled by default
 
 [directory]
 style = "bg:#DA627D"
 format = "[ $path ]($style)"
-truncation_length = 3
+truncation_length = 20
 truncation_symbol = "…/"
+truncate_to_repo = false
 
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
@@ -73,6 +100,10 @@ format = '[ $symbol ($version) ]($style)'
 symbol = " "
 style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
+
+[python]
+symbol = ' '
+pyenv_version_name = true
 
 [docker_context]
 symbol = " "
@@ -143,7 +174,7 @@ style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
-disabled = false
+disabled = true
 time_format = "%R" # Hour:Minute Format
 style = "bg:#33658A"
 format = '[ ♥ $time ]($style)'
