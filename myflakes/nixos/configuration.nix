@@ -144,7 +144,7 @@
   console.keyMap = "de";
 
 
-	fonts.fontconfig.enable = true;
+  fonts.fontconfig.enable = true;
 
 
 

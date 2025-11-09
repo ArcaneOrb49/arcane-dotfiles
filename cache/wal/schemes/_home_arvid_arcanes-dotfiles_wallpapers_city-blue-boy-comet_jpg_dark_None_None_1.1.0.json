@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/arvid/arcanes-dotfiles/wallpapers/city-blue-boy-comet.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0f15",
+        "foreground": "#a9c8e1",
+        "cursor": "#a9c8e1"
+    },
+    "colors": {
+        "color0": "#0a0f15",
+        "color1": "#4874B1",
+        "color2": "#376EC3",
+        "color3": "#8C7C8F",
+        "color4": "#5687B8",
+        "color5": "#3F91D1",
+        "color6": "#5190CB",
+        "color7": "#a9c8e1",
+        "color8": "#768c9d",
+        "color9": "#4874B1",
+        "color10": "#376EC3",
+        "color11": "#8C7C8F",
+        "color12": "#5687B8",
+        "color13": "#3F91D1",
+        "color14": "#5190CB",
+        "color15": "#a9c8e1"
+    }
+}

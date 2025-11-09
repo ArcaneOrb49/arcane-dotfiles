@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/arvid/arcanes-dotfiles/wallpapers/lake-evening-sky-stars.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#101216",
+        "foreground": "#b1bdc2",
+        "cursor": "#b1bdc2"
+    },
+    "colors": {
+        "color0": "#101216",
+        "color1": "#5E575A",
+        "color2": "#996051",
+        "color3": "#C06A52",
+        "color4": "#E29D65",
+        "color5": "#C2A46F",
+        "color6": "#6E7886",
+        "color7": "#b1bdc2",
+        "color8": "#7b8487",
+        "color9": "#5E575A",
+        "color10": "#996051",
+        "color11": "#C06A52",
+        "color12": "#E29D65",
+        "color13": "#C2A46F",
+        "color14": "#6E7886",
+        "color15": "#b1bdc2"
+    }
+}

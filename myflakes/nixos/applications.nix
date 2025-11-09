@@ -26,6 +26,10 @@ environment.systemPackages = with pkgs; [
     kdePackages.okular
     traceroute
     starship
+    feh
+    melonDS
+    rofi-bluetooth
+    dunst
 
 
  ### Systemwide Dependencies
@@ -90,6 +94,7 @@ environment.systemPackages = with pkgs; [
     spotify
     brave
     vivaldi
+    prismlauncher
 
  ### Dependencies
  	python313Packages.openrazer
