@@ -9,6 +9,7 @@ window {
 	orientation: horizontal;
 	padding: 1.5ch;
 	border-radius: 25px;
+	background-color: @background;
 }
 
 mainbox {
@@ -31,6 +32,7 @@ element.selected.normal {
 listview {
 	scrollbar: false;
 	lines: 10;
+	foreground-color: @urgent-background;
 }
 
 button.selected {

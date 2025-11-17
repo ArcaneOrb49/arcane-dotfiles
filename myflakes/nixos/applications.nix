@@ -30,6 +30,7 @@ environment.systemPackages = with pkgs; [
     melonDS
     rofi-bluetooth
     dunst
+    alsa-utils
 
 
  ### Systemwide Dependencies
@@ -89,12 +90,14 @@ environment.systemPackages = with pkgs; [
     networkmanager_dmenu
 
 
- ### Socials
+ ### Games & Socials
     discord
     spotify
     brave
     vivaldi
     prismlauncher
+    starsector
+    optifinePackages.optifine_1_19_4
 
  ### Dependencies
  	python313Packages.openrazer
