@@ -31,6 +31,8 @@ environment.systemPackages = with pkgs; [
     rofi-bluetooth
     dunst
     alsa-utils
+    pstree
+    rofi-power-menu
 
 
  ### Systemwide Dependencies
