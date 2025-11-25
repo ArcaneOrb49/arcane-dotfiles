@@ -33,6 +33,7 @@ environment.systemPackages = with pkgs; [
     alsa-utils
     pstree
     rofi-power-menu
+    wl-clipboard
 
 
  ### Systemwide Dependencies
