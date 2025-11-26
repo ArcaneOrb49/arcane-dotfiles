@@ -6,6 +6,7 @@ environment.systemPackages = with pkgs; [
     gtkgreet
     bluez
     polkit
+    libnotify
 
  ### Linux Utilities
     git
@@ -29,11 +30,14 @@ environment.systemPackages = with pkgs; [
     feh
     melonDS
     rofi-bluetooth
-    dunst
+    dunst			# Notification Daemon
     alsa-utils
     pstree
     rofi-power-menu
-    wl-clipboard
+    wl-clipboard		# Wayland Clipboard client
+    vesktop			# Discord client with built-in Vencord
+    firefox
+    imv
 
 
  ### Systemwide Dependencies
