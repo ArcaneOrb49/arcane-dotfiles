@@ -74,5 +74,5 @@ pkill -USR1 kitty
 pkill -SIGUSR2 waybar
 
 
-notify-send "Theme switched. Now using theme: $theme"
+notify-send "Theme switched." "Now using theme: $theme"
 
