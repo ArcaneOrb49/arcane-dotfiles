@@ -65,16 +65,20 @@ hyprctl hyprpaper wallpaper ",$THEMES_DIR/$theme/$WALLPAPER"
 ##########################################
 
 
+
+
+
+
 hyprctl hyprpaper reload
-
-
-pkill -USR1 kitty
 
 
 pkill -SIGUSR2 waybar
 
 cd $HOME/arcanes-dotfiles/Scripts/
 ./css2rasi-for-rofi.sh "$HOME/arcanes-dotfiles/curr-theme/theme.css" "$HOME/arcanes-dotfiles/curr-theme/theme.rasi"
+./css2conf-for-kitty.sh
+
+pkill -USR1 kitty
 
 
 notify-send "Theme switched." "Now using theme: $theme"
