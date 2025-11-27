@@ -73,6 +73,9 @@ pkill -USR1 kitty
 
 pkill -SIGUSR2 waybar
 
+cd $HOME/arcanes-dotfiles/Scripts/
+./css2rasi-for-rofi.sh "$HOME/arcanes-dotfiles/curr-theme/theme.css" "$HOME/arcanes-dotfiles/curr-theme/theme.rasi"
+
 
 notify-send "Theme switched." "Now using theme: $theme"
 

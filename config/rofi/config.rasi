@@ -1,4 +1,4 @@
-@import "~/.cache/wal/colors-rofi-dark.rasi"
+@import "~/arcanes-dotfiles/curr-theme/theme.rasi"
 
 window {
 	width: 600px;
@@ -9,30 +9,49 @@ window {
 	orientation: horizontal;
 	padding: 1.5ch;
 	border-radius: 25px;
-	background-color: @background;
+	background-color: @color-bg;
+	border: 0px;
 }
+
+textbox {
+	text-color: @color-bg;
+}
+
+
+textbox-prompt-colon {
+	text-color: @color-fg;
+}
+
 
 mainbox {
 	children: [ inputbar, message, listview ];
 }
 
 inputbar {
-	border: 0px 0px 2px 0px;
+	border: 0px 0px 0px 0px;
 }
 
 entry {
 	placeholder: "Type here...";
+	text-color: @color-fg;
 }
 
 element.selected.normal {
 	border-radius: 25px; /*Soft Corners */
 	padding: 10px;
+	background-color: @color-accent-2;
 }
+
+message {
+	border-color: @color-bg;
+}
+
 
 listview {
 	scrollbar: false;
 	lines: 10;
-	foreground-color: @urgent-background;
+	foreground-color: @color-bg;
+	border-color: @color-bg;
 }
 
 button.selected {
@@ -46,4 +65,21 @@ configuration {
 
 element {
 	padding: 4px;
+	background-color: @color-bg;
 }
+
+
+element.normal.normal {
+	background-color: @color-bg;
+	text-color: @color-fg;
+}
+
+element.alternate.normal {
+	background-color: @color-bg;
+	text-color: @color-fg;
+}
+
+prompt {
+	text-color: @color-fg;
+}
+
