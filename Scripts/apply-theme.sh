@@ -81,5 +81,9 @@ cd $HOME/arcanes-dotfiles/Scripts/
 pkill -USR1 kitty
 
 
+./css2conf-for-hyprland.sh
+hyprctl reload
+
+# Absolute Last Action
 notify-send "Theme switched." "Now using theme: $theme"
 

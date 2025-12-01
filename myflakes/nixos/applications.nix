@@ -38,6 +38,7 @@ environment.systemPackages = with pkgs; [
     vesktop			# Discord client with built-in Vencord
     firefox
     imv
+    man
 
 
  ### Systemwide Dependencies
