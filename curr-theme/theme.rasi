@@ -1,0 +1,18 @@
+/* Auto-generated from /home/arvid/arcanes-dotfiles/curr-theme/theme.css for rofi */
+* {
+  color-1: #2B4574;
+  color-2: #79B791;
+  color-3: #3581B8;
+  color-accent: #CB5079;
+  color-accent-2: #7341AC;
+  color-bg: #211422;
+  color-black: #3B4252;
+  color-blue: #5E81AC;
+  color-cyan: #88C0D0;
+  color-fg: #CDDDF7;
+  color-green: #A3BE8C;
+  color-magenta: #B48EAD;
+  color-red: #BF616A;
+  color-white: #E5E9F0;
+  color-yellow: #EBCB8B;
+}

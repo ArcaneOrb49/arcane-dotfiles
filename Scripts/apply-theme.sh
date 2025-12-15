@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -euo pipefail
+!/usr/bin/env bash
+set -euxo pipefail
 
 
 THEMES_DIR="$HOME/arcanes-dotfiles/themes"
@@ -31,10 +31,7 @@ mkdir -p "$OUT_DIR"
 ##########################################
 
 
-hyprctl hyprpaper unload all
-hyprctl hyprpaper preload "$THEMES_DIR/$theme/$WALLPAPER"
-hyprctl hyprpaper wallpaper ",$THEMES_DIR/$theme/$WALLPAPER"
-
+swaybg -i $THEMES_DIR/$theme/$WALLPAPER &
 
 
 ##########################################
@@ -65,14 +62,20 @@ hyprctl hyprpaper wallpaper ",$THEMES_DIR/$theme/$WALLPAPER"
 ##########################################
 
 
-hyprctl hyprpaper reload
-
-
-pkill -USR1 kitty
 
 
 pkill -SIGUSR2 waybar
 
+cd $HOME/arcanes-dotfiles/Scripts/
+./css2rasi-for-rofi.sh "$HOME/arcanes-dotfiles/curr-theme/theme.css" "$HOME/arcanes-dotfiles/curr-theme/theme.rasi"
+./css2conf-for-kitty.sh
 
-notify-send "Theme switched. Now using theme: $theme"
+pkill -USR1 kitty
+
+
+./css2conf-for-hyprland.sh
+hyprctl reload
+
+# Absolute Last Action
+notify-send "Theme switched." "Now using theme: $theme"
 

@@ -34,7 +34,7 @@ tooltip {
 }
 #clock:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
     transition: all .3s ease;
-    color:@color-bg;
+    color:@color-accent;
 }
 #custom-notification {
     padding: 0px 5px;
@@ -52,7 +52,7 @@ tooltip {
 #workspaces button {
     all:unset;
     padding: 0px 5px;
-    color: alpha(@color-bg,.4);
+    color: alpha(@color-fg,.4);
     transition: all .2s ease;
 }
 #workspaces button:hover {
@@ -62,7 +62,7 @@ tooltip {
     transition: all 1s ease;
 }
 #workspaces button.active {
-    color: @color-bg;
+    color: @color-fg;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
@@ -78,7 +78,7 @@ tooltip {
     transition: all 1s ease;
 }
 #workspaces button.empty.active {
-    color: @color-bg;
+    color: @color-accent;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }

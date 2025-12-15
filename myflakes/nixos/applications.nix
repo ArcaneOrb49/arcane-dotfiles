@@ -38,12 +38,20 @@ environment.systemPackages = with pkgs; [
     vesktop			# Discord client with built-in Vencord
     firefox
     imv
-
+    man
+    wpaperd
+    mako
+    swaybg
+    wbg
+    waytrogen
+    killall
+    waypaper
+    
 
  ### Systemwide Dependencies
 
  ### Hyprland Ecosystem
-    hyprpaper
+    # hyprpaper
     hyprcursor
     rose-pine-hyprcursor
     waybar
