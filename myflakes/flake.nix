@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     hyprland.url = "github:hyprwm/Hyprland";
+    hyprpaper.url = "github:hyprwm/hyprpaper";
     rose-pine-hyprcursor = {
 	url = "github:ndom91/rose-pine-hyprcursor";
 	inputs.nixpkgs.follows = "nixpkgs";
@@ -11,7 +12,7 @@
 	};
   };
 
-  outputs = { self, nixpkgs, hyprland, ... }:
+  outputs = { self, nixpkgs, hyprland, hyprpaper, ... }:
   let
     system = "x86_64-linux";
     pkgs = import nixpkgs {
@@ -51,10 +52,11 @@
 
           security.polkit.enable = true;
 
-          environment.systemPackages = with pkgs; [
-            vscode
-            hyprlock
-	    polkit
+          environment.systemPackages = [
+            pkgs.vscode
+            pkgs.hyprlock
+	    pkgs.polkit
+	    hyprpaper.packages.${system}.default
           ];
         }
       ];

@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -euo pipefail
+!/usr/bin/env bash
+set -euxo pipefail
 
 
 THEMES_DIR="$HOME/arcanes-dotfiles/themes"
@@ -31,10 +31,7 @@ mkdir -p "$OUT_DIR"
 ##########################################
 
 
-hyprctl hyprpaper unload all
-hyprctl hyprpaper preload "$THEMES_DIR/$theme/$WALLPAPER"
-hyprctl hyprpaper wallpaper ",$THEMES_DIR/$theme/$WALLPAPER"
-
+swaybg -i $THEMES_DIR/$theme/$WALLPAPER &
 
 
 ##########################################
@@ -65,11 +62,6 @@ hyprctl hyprpaper wallpaper ",$THEMES_DIR/$theme/$WALLPAPER"
 ##########################################
 
 
-
-
-
-
-hyprctl hyprpaper reload
 
 
 pkill -SIGUSR2 waybar
