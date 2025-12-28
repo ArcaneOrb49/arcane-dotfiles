@@ -8,7 +8,7 @@
 
 
         "hyprland/workspaces": {
-            "format": "{icon}",
+            "format": "{name}",
             "format-icons": {
                 "active": "",
                 "default": "",
