@@ -73,6 +73,7 @@ environment.systemPackages = with pkgs; [
     ghidra
     metasploit
     dnslookup
+    spek
 
  ### Funny Programms
     cmatrix
