@@ -1,15 +1,15 @@
 /* Auto-generated from /home/arvid/arcanes-dotfiles/curr-theme/theme.css for rofi */
 * {
-  color-1: #ADC3D9;
-  color-2: #5E7484;
-  color-3: #4A5056;
-  color-accent: #C94A2A;
-  color-accent-2: #F0C38E;
-  color-bg: #1E2328;
+  color-1: #5B4C73;
+  color-2: #F12F55;
+  color-3: #C24A4A;
+  color-accent: #FF6B5A;
+  color-accent-2: #3FD3FF;
+  color-bg: #0A1630;
   color-black: #3B4252;
   color-blue: #5E81AC;
   color-cyan: #88C0D0;
-  color-fg: #E6EBF0;
+  color-fg: #D2DAE6;
   color-green: #A3BE8C;
   color-magenta: #B48EAD;
   color-red: #BF616A;
