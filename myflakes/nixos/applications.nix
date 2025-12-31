@@ -30,22 +30,22 @@ environment.systemPackages = with pkgs; [
     feh
     melonDS
     rofi-bluetooth
-    dunst			# Notification Daemon
     alsa-utils
     pstree
-    rofi-power-menu
+    rofi-power-menu		# what it sais
     wl-clipboard		# Wayland Clipboard client
     vesktop			# Discord client with built-in Vencord
-    firefox
+    firefox			# what do you think ?
     imv
-    man
-    wpaperd
-    mako
+    man				# manpages
+    wpaperd			# Wallpaper Utilitie
+    mako			# Notification Daemon
     swaybg
     wbg
     waytrogen
     killall
     waypaper
+    speedtest
     
 
  ### Systemwide Dependencies
