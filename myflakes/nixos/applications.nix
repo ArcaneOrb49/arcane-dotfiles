@@ -46,6 +46,7 @@ environment.systemPackages = with pkgs; [
     killall
     waypaper
     speedtest
+    quickshell			# Desktop Shell Toolkit
     
 
  ### Systemwide Dependencies
