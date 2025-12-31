@@ -69,7 +69,7 @@
 
 
   networking.hostName = "nixos"; # Define your hostname.
-  networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
+  # networking.wireless.enable = false;  # Enables wireless support via wpa_supplicant.
   
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -79,6 +79,7 @@
   # Enable networking
    networking.networkmanager.enable = true;
    networking.wireless.iwd.enable = true;
+   networking.networkmanager.wifi.backend = "iwd";
 
    networking.networkmanager.plugins = with pkgs; [
 	networkmanager-openvpn
