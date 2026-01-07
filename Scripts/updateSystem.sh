@@ -6,8 +6,11 @@ cd /home/arvid/arcanes-dotfiles/myflakes
 echo "Updating flake inputs..."
 nix flake update
 
+echo "Rebuilding the NixOS system (boot)…"
+sudo nixos-rebuild boot --flake .#myNixos
 
-echo "Rebuilding the NixOS System..."
-sudo nixos-rebuild switch --flake .#myNixos
-echo "Switching to updated version..."
-echo "System update done! Commit to github or install another program"
+echo "Build finished."
+echo "Reboot to activate the new system."
+echo "If something breaks, select the previous generation in GRUB."
+nofify-send "Update done" "Please reboot at your earliest convenience"
+

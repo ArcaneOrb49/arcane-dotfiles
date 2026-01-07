@@ -7,6 +7,7 @@ environment.systemPackages = with pkgs; [
     bluez
     polkit
     libnotify
+    ffmpeg
 
  ### Linux Utilities
     git
@@ -21,7 +22,7 @@ environment.systemPackages = with pkgs; [
     sway
     unzip
     rofi
-    xfce.thunar
+    thunar
     xournalpp
     razer-cli
     kdePackages.okular
@@ -34,7 +35,6 @@ environment.systemPackages = with pkgs; [
     pstree
     rofi-power-menu		# what it sais
     wl-clipboard		# Wayland Clipboard client
-    vesktop			# Discord client with built-in Vencord
     firefox			# what do you think ?
     imv
     man				# manpages
@@ -47,6 +47,7 @@ environment.systemPackages = with pkgs; [
     waypaper
     speedtest
     quickshell			# Desktop Shell Toolkit
+    audacity
     
 
  ### Systemwide Dependencies
