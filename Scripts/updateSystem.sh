@@ -12,5 +12,4 @@ sudo nixos-rebuild boot --flake .#myNixos
 echo "Build finished."
 echo "Reboot to activate the new system."
 echo "If something breaks, select the previous generation in GRUB."
-nofify-send "Update done" "Please reboot at your earliest convenience"
 

@@ -7,7 +7,6 @@ environment.systemPackages = with pkgs; [
     bluez
     polkit
     libnotify
-    ffmpeg
 
  ### Linux Utilities
     git
@@ -48,6 +47,8 @@ environment.systemPackages = with pkgs; [
     speedtest
     quickshell			# Desktop Shell Toolkit
     audacity
+    ffmpeg
+    unixtools.ifconfig
     
 
  ### Systemwide Dependencies
@@ -72,7 +73,7 @@ environment.systemPackages = with pkgs; [
  ### Security / Pentesting
     wireshark
     nmap
-    ghidra
+   # ghidra
     metasploit
     dnslookup
     spek
