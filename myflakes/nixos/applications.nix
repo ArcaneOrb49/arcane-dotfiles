@@ -49,10 +49,14 @@ environment.systemPackages = with pkgs; [
     audacity
     ffmpeg
     unixtools.ifconfig
+    ripgrep
+    gnumake
+    gcc
     
 
  ### Systemwide Dependencies
-
+    nodejs_25
+    tree-sitter
  ### Hyprland Ecosystem
     # hyprpaper
     hyprcursor
