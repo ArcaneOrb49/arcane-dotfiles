@@ -10,5 +10,5 @@ Have fun!
 
 # Acknowledgements
 
-'Neovim' config by [Josean Martinez](https://www.youtube.com/@joseanmartinez)
-󱞩 [Git Repo](https://github.com/josean-dev/dev-environment-files)
+'Neovim' config by [Josean Martinez](https://www.youtube.com/@joseanmartinez) \
+-> [Git Repo](https://github.com/josean-dev/dev-environment-files)
