@@ -2,12 +2,12 @@ format = """
 [](#9A348E)\
 $os\
 $username\
-[](bg:#DA627D fg:#9A348E)\
+[](bg:#7341AC fg:#9A348E)\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
+[](bg:#3581B8 fg:#7341AC)\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#86BBD8)\
+[](bg:#2B4574 fg:#3581B8)\
 $c\
 $elixir\
 $elm\
@@ -21,7 +21,7 @@ $nim\
 $rust\
 $scala\
 $python\
-[](fg:#86BBD8 bg:#06969A)\
+[](bg:#06969A fg:#2B4574)\
 $docker_context\
 $nix_shell\
 [](fg:#06969A bg:#33658A)\
@@ -49,13 +49,13 @@ pure_msg = 'pure'
 impure_msg = 'impure'
 unknown_msg = 'unknown'
 format = '[$symbol nix-shell]($style)'
-style = "fg:black bg:#06969A"
+style = "fg:white bg:#06969A"
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
 [username]
 show_always = true
-style_user = "fg:black bg:#9A348E"
+style_user = "fg:white bg:#9A348E"
 style_root = "bg:#9A348E"
 format = '[$user ]($style)'
 disabled = false
@@ -67,7 +67,7 @@ style = "bg:#9A348E"
 disabled = true # Disabled by default
 
 [directory]
-style = "fg:black bg:#DA627D"
+style = "fg:white bg:#7341AC"
 format = "[ $path ]($style)"
 truncation_length = 20
 truncation_symbol = "…/"
@@ -88,7 +88,7 @@ truncate_to_repo = false
 
 [c]
 symbol = " "
-style = "fg:black bg:#86BBD8"
+style = "fg:white bg:#2B4574"
 format = '[ $symbol ($version) ]($style)'
 
 [cpp]
@@ -121,11 +121,11 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "fg:black bg:#FCA17D"
+style = "fg:white bg:#3581B8"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "fg:black bg:#FCA17D"
+style = "fg:white bg:#3581B8"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
