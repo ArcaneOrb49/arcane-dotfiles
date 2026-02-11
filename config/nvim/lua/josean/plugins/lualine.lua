@@ -6,12 +6,12 @@ return {
     local lazy_status = require("lazy.status") -- to configure lazy pending updates count
 
     local colors = {
-      blue = "#65D1FF",
-      green = "#3EFFDC",
-      violet = "#FF61EF",
-      yellow = "#FFDA7B",
-      red = "#FF4A4A",
-      fg = "#c3ccdc",
+      blue = "#3F74DC",
+      turquoise = "#3EFFDC",
+      green = "#7af42e",
+      yellow = "#ecb323",
+      red = "#f71111",
+      fg = "#b563eb",
       bg = "#112638",
       inactive_bg = "#2c3043",
     }
@@ -23,12 +23,12 @@ return {
         c = { bg = colors.bg, fg = colors.fg },
       },
       insert = {
-        a = { bg = colors.green, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.turquoise, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
         c = { bg = colors.bg, fg = colors.fg },
       },
       visual = {
-        a = { bg = colors.violet, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.green, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
         c = { bg = colors.bg, fg = colors.fg },
       },
@@ -62,7 +62,7 @@ return {
             color = { fg = "#ff9e64" },
           },
           { "encoding" },
-          { "fileformat", symbols = { unix = "" } },
+          { "fileformat", symbols = { unix = "nix" } },
           { "filetype" },
         },
       },

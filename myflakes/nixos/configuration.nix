@@ -85,7 +85,25 @@
    networking.networkmanager.plugins = with pkgs; [
 	networkmanager-openvpn
 ];
+  
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    publish = {
+      enable = true;
+      addresses = true;
+      workstation = true;
+      userServices = true;
+      domain = true;
+    };
+  };
 
+  networking.firewall = {
+    enable = true;
+
+    interfaces.wlan0.allowedUDPPorts = [ 5353 6000 6001 7011];
+    interfaces.wlan0.allowedTCPPorts = [ 7000 7001 7100 ];
+  };
 
 
 	#####################################

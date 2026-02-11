@@ -52,7 +52,13 @@ environment.systemPackages = with pkgs; [
     ripgrep
     gnumake
     gcc
-    
+    uxplay
+    avahi
+    librewolf
+    file
+    fileinfo
+    chatterino7
+
 
  ### Systemwide Dependencies
     nodejs_25
