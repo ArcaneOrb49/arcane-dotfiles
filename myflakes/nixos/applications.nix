@@ -131,6 +131,7 @@ environment.systemPackages = with pkgs; [
  ### Dependencies
  	python313Packages.openrazer
 	xorg.xrdb
+  dotnetCorePackages.sdk_8_0_1xx
 
 ];
 }
