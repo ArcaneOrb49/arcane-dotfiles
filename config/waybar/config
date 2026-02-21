@@ -1,10 +1,69 @@
 {
         "layer": "top",
         "position": "top",
+        "height": 30,
+        "margin-left": 10,
+        "margin-right": 10,
+        "margin-top": 5,
+        "margin-bottom": 0,
+        "spacing": 15,
         "reload_style_on_change": true,
-        "modules-left": ["clock"],
-        "modules-center": ["hyprland/workspaces"],
-        "modules-right": ["cpu", "memory", "temperature","bluetooth","network","battery"],
+        
+        "modules-left": [
+          "group/arcane-left-1"
+        ],
+
+        "modules-center": [
+          "group/arcane-center-1"
+        ],
+
+
+        "modules-right": [
+          "group/arcane-right-1", 
+          "group/arcane-right-2", 
+          "group/arcane-right-3", 
+          "group/arcane-right-4"
+        ],
+
+
+
+        "group/arcane-left-1" : {
+          "orientation": "horizontal",
+          "modules": ["clock"]
+        },
+          
+
+
+        "group/arcane-center-1" : {
+          "orientation": "horizontal",
+          "modules": ["hyprland/workspaces"]
+        },
+
+
+
+        "group/arcane-right-1" : {
+          "orientation": "horizontal",
+          "modules": ["cpu", "memory", "temperature"]
+        },
+
+        "group/arcane-right-2" : {
+          "orientation": "horizontal",
+          "modules": ["bluetooth"]
+        },
+
+
+         "group/arcane-right-3" : {
+          "orientation": "horizontal",
+          "modules": ["network"]
+        },
+
+         "group/arcane-right-4" : {
+          "orientation": "horizontal",
+          "modules": ["battery"]
+        },
+
+
+
 
 
         "hyprland/workspaces": {
@@ -21,21 +80,20 @@
         },
         "clock": {
             "format": "{:%H:%M:%S %A %B %d %Y} ",
-            "interval": 1,   
+            "interval": 1  
             },
         "network": {
             "format-wifi": "{essid}   ",
             "format-ethernet":"    ",
             "format-disconnected": "  ",
-            "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
-            "tooltip-format-ethernet": "{ifname} 🖧 ",
+            "tooltip-format-wifi": "({signalStrength}%)  ",
+            "tooltip-format-ethernet": "{ifname} 🖧 "
         },
         "bluetooth": {
             "format-on": " 󰂯 ",
-            "format-off": "BT-off",
-            "format-disabled": " 󰂲 ",
+            "format-off": " 󰂲 ",
             "format-connected-battery": "{device_battery_percentage}% 󰂯",
-            "format-alt": "{device_alias} 󰂯",
+            "format-alt": "{device_alias} 󰂯"
         }, 
         "battery": {
             "interval":30,
@@ -44,9 +102,9 @@
                 "warning": 30,
                 "critical": 20
             },
-            "format": "{capacity}% 󰁹 ",
+            "format": "{capacity}% 󰁹 󰚦 ",
             "format-charging": "{capacity}% 󰂄",
-            "format-plugged": "{capacity}% 󰂄 ",
+            "format-plugged": "{capacity}% 󰂄 ",
             "format-alt": "{time} {icon}",
             "format-icons": [
                 "󰁻",
