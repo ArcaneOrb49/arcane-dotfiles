@@ -26,7 +26,7 @@
         ],
 
 
-
+        
         "group/arcane-left-1" : {
           "orientation": "horizontal",
           "modules": ["clock"]
@@ -76,18 +76,17 @@
             "persistent-workspaces": {
                 "*": [ 1,2 ]
             }
-    
         },
         "clock": {
             "format": "{:%H:%M:%S %A %B %d %Y} ",
             "interval": 1  
             },
         "network": {
-            "format-wifi": "{essid}   ",
-            "format-ethernet":"    ",
-            "format-disconnected": "  ",
-            "tooltip-format-wifi": "({signalStrength}%)  ",
-            "tooltip-format-ethernet": "{ifname} 🖧 "
+            "format-wifi": " {essid} ",
+            "format-ethernet":"",
+            "format-disconnected": "",
+            "tooltip-format-wifi": "({signalStrength}%) ",
+            "tooltip-format-ethernet": "{ifname} 🖧"
         },
         "bluetooth": {
             "format-on": " 󰂯 ",
@@ -107,13 +106,12 @@
             "format-plugged": "{capacity}% 󰂄 ",
             "format-alt": "{time} {icon}",
             "format-icons": [
-                "󰁻",
-            "󰁼",
-            "󰁾",
-            "󰂀",
-            "󰂂",
-            "󰁹",
-            ""
+              "󰁹",
+              "󰁻",
+              "󰁼",
+              "󰁾",
+              "󰂀",
+              "󰂂"
             ]
         },
         "cpu": {
@@ -121,7 +119,8 @@
             "tooltip": true
         },
         "memory": {
-            "format": "  {percentage}% "
+            "format": " {percentage}% ",
+            "tooltip": true
         },
         "temperature": {
             "format": " {temperatureC}°C "
