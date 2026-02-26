@@ -28,7 +28,7 @@ environment.systemPackages = with pkgs; [
     traceroute
     starship
     feh
-    melonDS
+    # melondS
     rofi-bluetooth
     alsa-utils
     pstree
@@ -58,6 +58,10 @@ environment.systemPackages = with pkgs; [
     file
     fileinfo
     chatterino7
+    stress
+    metadata
+    pdftag
+    vscodium
 
 
  ### Systemwide Dependencies
@@ -87,6 +91,7 @@ environment.systemPackages = with pkgs; [
     metasploit
     dnslookup
     spek
+    hashcat
 
  ### Funny Programms
     cmatrix
@@ -130,7 +135,7 @@ environment.systemPackages = with pkgs; [
 
  ### Dependencies
  	python313Packages.openrazer
-	xorg.xrdb
+	xrdb
   dotnetCorePackages.sdk_8_0_1xx
 
 ];
