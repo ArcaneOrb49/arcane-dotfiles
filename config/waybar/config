@@ -68,11 +68,6 @@
 
         "hyprland/workspaces": {
             "format": "{name}",
-            "format-icons": {
-                "active": "",
-                "default": "",
-                "empty": ""
-            },
             "persistent-workspaces": {
                 "*": [ 1,2 ]
             }
@@ -82,11 +77,12 @@
             "interval": 1  
             },
         "network": {
-            "format-wifi": " {essid} ",
+            "format-wifi": "{essid} ",
             "format-ethernet":"",
             "format-disconnected": "",
             "tooltip-format-wifi": "({signalStrength}%) ",
-            "tooltip-format-ethernet": "{ifname} 🖧"
+            "tooltip-format-ethernet": "{ifname} 🖧",
+            "interval":1
         },
         "bluetooth": {
             "format-on": " 󰂯 ",
@@ -123,7 +119,8 @@
             "tooltip": true
         },
         "temperature": {
-            "format": " {temperatureC}°C "
+            "format": " {temperatureC}°C ",
+            "tooltip-format": "{temperatureC}°C ({state} )"
         }
 } 
 
