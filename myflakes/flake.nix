@@ -6,9 +6,9 @@
     hyprland.url = "github:hyprwm/Hyprland";
     hyprpaper.url = "github:hyprwm/hyprpaper";
     rose-pine-hyprcursor = {
-	url = "github:ndom91/rose-pine-hyprcursor";
-	inputs.nixpkgs.follows = "nixpkgs";
-	inputs.hyprlang.follows = "hyprland/hyprlang";
+	    url = "github:ndom91/rose-pine-hyprcursor";
+	    inputs.nixpkgs.follows = "nixpkgs";
+	    inputs.hyprlang.follows = "hyprland/hyprlang";
 	};
   };
 
@@ -53,10 +53,9 @@
           security.polkit.enable = true;
 
           environment.systemPackages = [
-            pkgs.vscode
             pkgs.hyprlock
-	    pkgs.polkit
-	    hyprpaper.packages.${system}.default
+	          pkgs.polkit
+	          hyprpaper.packages.${system}.default
           ];
         }
       ];
