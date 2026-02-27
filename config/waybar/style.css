@@ -172,6 +172,7 @@ tooltip {
     transition: all .3s ease; 
     color:@color-accent;
     border-bottom: 2px solid;
+    border-radius: 0px 0px;
 }
 
 
@@ -180,6 +181,7 @@ tooltip {
     transition: all .3s ease; 
     color:@color-accent-2;
     border-bottom: 2px solid;
+    border-radius: 0px 12px;
 }
 
 
@@ -188,6 +190,7 @@ tooltip {
     transition: all .3s ease; 
     color:@color-green;
     border-bottom: 2px solid;
+    border-radius: 12px 0px;
 }
 
 #temperature.good {
