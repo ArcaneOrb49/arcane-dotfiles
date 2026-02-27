@@ -77,9 +77,9 @@
             "interval": 1  
             },
         "network": {
-            "format-wifi": "{essid} ",
+            "format-wifi": "{essid}   ",
             "format-ethernet":"",
-            "format-disconnected": "",
+            "format-disconnected": " 󰤮 ",
             "tooltip-format-wifi": "({signalStrength}%) ",
             "tooltip-format-ethernet": "{ifname} 🖧",
             "interval":1
@@ -120,7 +120,7 @@
         },
         "temperature": {
             "format": " {temperatureC}°C ",
-            "tooltip-format": "{temperatureC}°C ({state} )"
+            "tooltip": true
         }
 } 
 

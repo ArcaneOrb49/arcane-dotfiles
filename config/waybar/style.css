@@ -1,8 +1,8 @@
 @import url('/home/arvid/arcanes-dotfiles/curr-theme/theme.css');
 
 * {
-    font-size:17px;
-    font-family: "0xProto Nerd Font Mono", "0xProto Nerd Font", "DejaVu Sans Mono", monospace;
+    font-size:16px;
+    font-family: "JetBrainsMono Nerdfont", "JetBrainsMono Nerdfont", "JetBrainsMono Nerdfont", monospace;
 }
 window#waybar{
     all: unset;
@@ -21,18 +21,8 @@ window#waybar{
     border-radius:10px;
     background: alpha(@color-bg,.6);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+    font-weight: bold;
 }
-
-/*
-
-.modules-right {
-    padding:7px;
-    margin: 10px 10px 5px 0px;
-    border-radius:10px;
-    background: alpha(@color-bg, .6);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-*/
 
 
 
@@ -54,6 +44,7 @@ window#waybar{
     margin: 2px 2px 0px 0px;
     background: alpha(@color-bg, .8);
     border-radius: 12px;
+    padding: 0 0.5em
 }
 
 #arcane-right-4 {
@@ -64,12 +55,12 @@ window#waybar{
 
 
 tooltip {
-    background:@color-bg;
+    background:alpha(@color-bg,.8);
     color: @color-bg;
 }
 #clock:hover, #bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
     transition: all .3s ease;
-    color:@color-accent;
+    color:@color-fg;
 }
 
 #clock{
@@ -87,7 +78,7 @@ tooltip {
 
 #workspaces button {
     all:unset;
-    padding: 0px 5px;
+    padding: 0 0.5em;
     color: alpha(@color-fg,.4);
     transition: all .2s ease;
 }
@@ -95,7 +86,7 @@ tooltip {
 
 
 #workspaces button:hover {
-    color:rgba(0,0,0,0);
+    color: rgb(193, 184, 184);
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
@@ -104,15 +95,15 @@ tooltip {
 
 
 #workspaces button.active {
-    color: @color-fg;
+    color: @color-accent;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
 
 
 
-#workspaces button.empty {
-    color: rgba(0,0,0,0);
+#workspaces button.empty.visible {
+    color: @color-fg;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
 }
@@ -120,7 +111,7 @@ tooltip {
 
 
 #workspaces button.empty:hover {
-    color: rgba(0,0,0,0);
+    color: rgb(203, 105, 105);
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
