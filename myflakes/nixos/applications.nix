@@ -3,140 +3,116 @@
 environment.systemPackages = with pkgs; [
 
  ### Basic Linux Programms
-    gtkgreet
-    bluez
-    polkit
-    libnotify
+   gtkgreet       # Login manager(?)
+   bluez          # Audioplayer software/drivers(?)
+   polkit         # permission software(?)
+   libnotify      # not sure
 
  ### Linux Utilities
-    git
-    kitty
-    grim
-    slurp
-    wofi
-    vim 
-    neovim
-    neofetch
-    fastfetch
-    sway
-    unzip
-    rofi
-    thunar
-    xournalpp
-    razer-cli
-    kdePackages.okular
-    traceroute
-    starship
-    feh
-    # melondS
-    rofi-bluetooth
-    alsa-utils
-    pstree
-    rofi-power-menu		# what it sais
-    wl-clipboard		# Wayland Clipboard client
-    firefox			# what do you think ?
-    imv
-    man				# manpages
-    wpaperd			# Wallpaper Utilitie
-    mako			# Notification Daemon
-    swaybg
-    wbg
-    waytrogen
-    killall
-    waypaper
-    speedtest
-    quickshell			# Desktop Shell Toolkit
-    audacity
-    ffmpeg
-    unixtools.ifconfig
-    ripgrep
-    gnumake
-    gcc
-    uxplay
-    avahi
-    librewolf
-    file
-    fileinfo
-    chatterino7
-    stress
-    metadata
-    pdftag
-    vscodium
+   git            # Software Versioning tool
+   kitty          # Terminal
+   grim           # Screenshot utility
+   slurp          # not sure [CHECK IF NEEDED]
+   neovim         # Texteditor
+   neofetch       # Displays system info [TO BE REMOVED IN FUTURE VERSION]
+   fastfetch      # Displays system info
+   sway           # not sure [CHECK IF NEEDED]
+   unzip          # unzip .zip files
+   rofi           # GUI for different managing different aspects of the machine
+   thunar         # Filemanager
+   xournalpp      # Xournal (Okular alternative)
+   kdePackages.okular   # pdf viewer
+   traceroute     # trace packages across gateways
+   starship       # Terminal colorizier for Path and prompt
+   rofi-bluetooth # bluetooth gui based on rofi
+   alsa-utils     # linux utlity pack
+   pstree         # lists programms
+   rofi-power-menu		# what it sais
+   wl-clipboard	# Wayland Clipboard client
+   firefox			# what do you think ?
+   man				# manpages
+   mako			   # Notification Daemon
+   swaybg         # Wallpaper Utility
+   killall        # killall linux utlity
+   speedtest-cli  # Speedtest cli
+   quickshell		# Desktop Shell Toolkit
+   audacity       # Audio Editor
+   ffmpeg         # Video editor and creator 
+   unixtools.ifconfig   # 
+   ripgrep        # grep alternative
+   gnumake        # make
+   gcc            # Compiler
+   uxplay         # Airplay Reciever emulator
+   avahi          # Utility for Network changes
+   file           # Read Information of the File (charset, filetype etc.)
+   fileinfo       # Read Fileinfo (Metadata etc.)
+   stress         # Stress-test for different types of stress
+   metadata       # Read Metadata of files
+   pdftag         # Metadata Reader of PDFs
+   vscodium-fhs   # Open-Source Implementation of VSCode
+    
 
 
  ### Systemwide Dependencies
-    nodejs_25
-    tree-sitter
+   nodejs_25      # dependencie for Neovim Setup
+   tree-sitter    # Neovim Plugin
+
  ### Hyprland Ecosystem
-    # hyprpaper
-    hyprcursor
-    rose-pine-hyprcursor
-    waybar
-    pywal
+   hyprcursor     # Cursor Hyprland intergration [CHECK IF NEEDED]
+   rose-pine-hyprcursor # Cursor
+   waybar         # Statusbar
 
  ### Uni Programms
-    conda
-	(python313.withPackages (ps: with ps; [
-		pandas
-		tensorflow
-		dbus-python
-		ipykernel
-		jupyter
-	]))
+   python315      # Python 3.15
 
  ### Security / Pentesting
-    wireshark
-    nmap
-   # ghidra
-    metasploit
-    dnslookup
-    spek
-    hashcat
+   wireshark      # Network Sniffing
+   nmap           # Portscanning
+   ghidra         # Reverse-Engineering
+   metasploit     # Exploit Framework
+   dnslookup      # DNS Lookup service
+   spek           # Acoustic Spectrum Analyzer
+   hashcat        # Hashbreaker
 
  ### Funny Programms
-    cmatrix
-    clock-rs
-    cbonsai
-    asciiquarium-transparent
-    htop
-    zenith
-    pipes
-    gotop
-    broot
-    speedtest-cli
-    glances
+   cmatrix        # Displays a matrix-like overlay using letters and numbers in the terminal
+   clock-rs       # Displays a clock
+   cbonsai        # Displays a Bonsai using Ascii-art
+   asciiquarium-transparent # Displays an Aquarium using Ascii art
+   htop           # Taskmanager-like programm
+   zenith         # Taskmanger/htop like programm
+   pipes
+   gotop
+   broot
+   glances
 
  ### Productivity Apps
-    libreoffice
-    vlc
+   libreoffice    # Libreoffice Programm Collection
+   vlc            # VLC Media Player
 
  ### Fonts
-    dejavu_fonts
+   dejavu_fonts   # Font package
 
  ### Network Apps
-    networkmanagerapplet
-    openvpn
-    rofi-vpn
-    rofi-network-manager
-    wirelesstools
-    networkmanager-openvpn
-    networkmanager
-    networkmanager_dmenu
+   networkmanagerapplet # Networkmanager (GUI?)
+   openvpn        # VPN Utility
+   rofi-vpn       # VPN Manager based on rofi
+   rofi-network-manager # Networkmanager GUI based on rofi
+   wirelesstools  # Network Utility Package
+   networkmanager-openvpn  # OpenVPN Extension for the Networkmanager
+   networkmanager # Networkmanager
+   networkmanager_dmenu # Networkmanager (not sure what dmenu is)
 
 
  ### Games & Socials
-    discord
-    spotify
-    brave
-    vivaldi
-    prismlauncher
-    starsector
-    optifinePackages.optifine_1_19_4
+   discord        # Messagin Platform
+   brave          # Browser
+   prismlauncher  # Minecraft Launcher
+   starsector     # Starsector Game Launcher
 
  ### Dependencies
- 	python313Packages.openrazer
-	xrdb
-  dotnetCorePackages.sdk_8_0_1xx
+	xrdb           # not sure
+   dotnetCorePackages.runtime_10_0-bin # dotnet dependency [CHECK IF NEEDED]
 
 ];
 }
