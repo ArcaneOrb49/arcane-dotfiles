@@ -9,46 +9,34 @@ window#waybar{
 }
 
 .modules-left {
-    padding:7px;
-    margin:10px 0px 5px 10px;
-    border-radius:10px;
-    background: alpha(@color-bg,.6);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+    border-radius:12px;
 }
+
 .modules-center {
-    padding:7px;
-    margin:10px 0px 5px 0px;
-    border-radius:10px;
-    background: alpha(@color-bg,.6);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
+    border-radius:12px;
     font-weight: bold;
 }
 
 
 
 #arcane-right-1 {
-    margin: 2px 2px 0px 0px;
-    background: alpha(@color-bg, .8);
+    background: alpha(@color-fg, .8);
     border-radius: 12px;
 }
 
 #arcane-right-2 {
-    margin: 2px 2px 0px 0px;
-    background: alpha(@color-bg, .8);
+    background: alpha(@color-fg, .8);
     border-radius: 12px;
 }
 
 
 
 #arcane-right-3 {
-    margin: 2px 2px 0px 0px;
     background: alpha(@color-bg, .8);
     border-radius: 12px;
-    padding: 0 0.5em
 }
 
 #arcane-right-4 {
-    margin: 2px 2px 0px 0px;
     background: alpha(@color-bg, .8);
     border-radius: 12px;
 }
@@ -58,20 +46,24 @@ tooltip {
     background:alpha(@color-bg,.8);
     color: @color-bg;
 }
-#clock:hover, #bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
-    transition: all .3s ease;
-    color:@color-fg;
-}
+
 
 #clock{
-    padding: 0px 5px;
     color:@color-fg;
     transition: all .3s ease;
+    background-image: 
+        linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        linear-gradient(to right, @color-accent-2, @color-accent, @color-accent-2);
+    border-radius: 12px;
 }
 
 
 #workspaces {
-    padding: 0px 5px;
+    color:@color-fg;
+    background-image: 
+        linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        linear-gradient(to right, @color-accent-2, @color-accent, @color-accent-2);
+    border-radius: 12px;
 }
 
 
@@ -79,7 +71,7 @@ tooltip {
 #workspaces button {
     all:unset;
     padding: 0 0.5em;
-    color: alpha(@color-fg,.4);
+    color: alpha(@color-fg,.6);
     transition: all .2s ease;
 }
 
@@ -95,7 +87,7 @@ tooltip {
 
 
 #workspaces button.active {
-    color: @color-accent;
+    color: @color-fg;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
@@ -128,17 +120,24 @@ tooltip {
 
 
 #bluetooth{
-    padding: 0px 5px;
     transition: all .3s ease;
-    color: @color-fg;
+    color:@color-fg;
+    background-image: 
+        linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        linear-gradient(to right, @color-accent-2, @color-accent, @color-accent-2);
+    border-radius: 12px;
 }
 
 
 
 #network{
-    padding: 0px 5px;
     transition: all .3s ease;
     color:@color-fg;
+    background-image: 
+        linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        linear-gradient(to right, @color-accent-2, @color-accent, @color-accent-2);
+    border-radius: 12px;
+
 }
 
 
@@ -147,31 +146,21 @@ tooltip {
     padding: 0px 5px;
     transition: all .3s ease;
     color:@color-fg;
+    background-image: 
+        linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        linear-gradient(to right, @color-accent-2, @color-accent, @color-accent-2);
+    border-radius: 12px;
 
 
-}
-#battery.charging {
-    color: #0cc559;
-}
-
-#battery.warning:not(.charging) {
-    color: #fcb34b;
-}
-
-#battery.critical:not(.charging) {
-    color: #ec1d1d;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 #memory{
     padding: 5px;
     transition: all .3s ease; 
-    color:@color-accent;
-    border-bottom: 2px solid;
+    background-image: 
+        linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        linear-gradient(to left, @color-accent, @color-accent );
+    color: @color-fg;
     border-radius: 0px 0px;
 }
 
@@ -179,33 +168,22 @@ tooltip {
 #cpu{
     padding: 5px;
     transition: all .3s ease; 
-    color:@color-accent-2;
-    border-bottom: 2px solid;
-    border-radius: 0px 12px;
+    background-image: 
+        linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        linear-gradient(to right, @color-accent-2, @color-accent );
+    color: @color-fg;
+    border-radius: 12px 0px 0px 12px;
 }
 
 
-#temperature{
-    padding: 5px;
-    transition: all .3s ease; 
-    color:@color-green;
-    border-bottom: 2px solid;
-    border-radius: 12px 0px;
+#temperature {
+  padding: 5px;
+  transition: all 0.3s ease;
+  background-image:
+    linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* Dim overlay */
+    linear-gradient(to left, @color-accent-2, @color-accent);       /* Original gradient */
+  color: @color-fg;
+  border-radius: 0px 12px 12px 0px;
 }
 
-#temperature.good {
-    color:@color-yellow;
-}
-
-
-#temperature.critical {
-    color:@color-red;
-}
-
-
-#custom-endpoint{
-    color:transparent;
-    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);
-
-}
 
