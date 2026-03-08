@@ -14,7 +14,6 @@ environment.systemPackages = with pkgs; [
    grim           # Screenshot utility
    slurp          # not sure [CHECK IF NEEDED]
    neovim         # Texteditor
-   neofetch       # Displays system info [TO BE REMOVED IN FUTURE VERSION]
    fastfetch      # Displays system info
    sway           # not sure [CHECK IF NEEDED]
    unzip          # unzip .zip files
