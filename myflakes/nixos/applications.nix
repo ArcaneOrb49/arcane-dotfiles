@@ -50,7 +50,8 @@ environment.systemPackages = with pkgs; [
    pdftag         # Metadata Reader of PDFs
    vscodium-fhs   # Open-Source Implementation of VSCode
    shotcut        # Video editing Software
-   kdePackages.kdenlive # Video editing Softwae
+   kdePackages.kdenlive # Video editing Software
+   fresh-editor   # Terminal based teext editing with LSP support
 
 
  ### Systemwide Dependencies
