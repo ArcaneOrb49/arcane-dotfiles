@@ -49,7 +49,8 @@ environment.systemPackages = with pkgs; [
    metadata       # Read Metadata of files
    pdftag         # Metadata Reader of PDFs
    vscodium-fhs   # Open-Source Implementation of VSCode
-    
+   shotcut        # Video editing Software
+   kdePackages.kdenlive # Video editing Softwae
 
 
  ### Systemwide Dependencies
@@ -111,7 +112,7 @@ environment.systemPackages = with pkgs; [
 
  ### Dependencies
 	xrdb           # not sure
-   dotnetCorePackages.runtime_10_0-bin # dotnet dependency [CHECK IF NEEDED]
+   dotnetCorePackages.sdk_8_0-bin
 
 ];
 }
