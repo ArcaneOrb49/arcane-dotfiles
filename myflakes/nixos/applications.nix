@@ -51,8 +51,7 @@ environment.systemPackages = with pkgs; [
    vscodium-fhs   # Open-Source Implementation of VSCode
    shotcut        # Video editing Software
    kdePackages.kdenlive # Video editing Software
-   fresh-editor   # Terminal based teext editing with LSP support
-
+   obs-studio     # Recordering and Streaming Software
 
  ### Systemwide Dependencies
    nodejs_25      # dependencie for Neovim Setup
